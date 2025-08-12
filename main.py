@@ -1,6 +1,6 @@
 from resume_reader import extract_text
 from resume_parser import extract_resume_details
-from job_matcher import match_job_requirements
+from job_matcher import rank_candidates
 
 def main():
     # File path to resume aur ye txt or pdf ne hona chye only

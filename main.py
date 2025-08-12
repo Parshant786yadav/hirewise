@@ -21,7 +21,9 @@ def main():
         resume_details = extract_resume_details(resume_text)
         
         # 3rd pr Compare resume details to job requirements
-        match_results = match_job_requirements(resume_details, job_requirements) 
+        ranked_results = rank_candidates([resume_details], job_requirements)
+        match_results = ranked_results[0]  # since only one resume
+ 
 
         # 4th pe result ki output match krni he
         print(f"Matched Skills: {match_results['matched_skills']}")

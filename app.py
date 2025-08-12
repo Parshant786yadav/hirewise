@@ -196,5 +196,9 @@ def download_csv(csv_name):
         flash("PDF not found.")
         return redirect(url_for('index'))
 
+@app.route('/health')
+def health():
+    return "OK", 200
+
 if __name__ == '__main__':
     app.run(debug=False, port=5000)

@@ -30,8 +30,10 @@ def get_presets():
         'Backend (example)': 'python, django, flask, sql, aws',
         'Frontend (example)': 'javascript, react, html, css'
     }
-
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
+def landing():
+    return render_template('landing.html')
+@app.route('/match', methods=['GET', 'POST'])
 def index():
     # Pre-filled values (used if form reloads after validation error)
     form_data = {

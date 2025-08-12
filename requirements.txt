@@ -4,4 +4,7 @@ python-docx>=0.8.11
 nltk>=3.5
 reportlab>=4.0
 gunicorn>=20.1.0
+itsdangerous>=2.0
+Werkzeug>=2.0
+Jinja2>=3.0
 

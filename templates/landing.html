@@ -259,7 +259,8 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-left">
-            <img src="crop logo.jpg" alt="Logo" class="logo">
+            <img src="{{ url_for('static', filename='images/crop_logo.jpg') }}" alt="Logo" class="logo">
+
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
@@ -271,7 +272,8 @@
     <!-- Main Content -->
     <div class="container">
         <div class="image-section">
-            <img src="Resume pic.png" alt="Profile" class="profile-img">
+            <img src="{{ url_for('static', filename='images/resume_pic.png') }}" alt="Profile" class="profile-img">
+
         </div>
         <div class="text-section">
             <h2>Looking for future stars for your team? <span>HireWise</span> helps you find them fast.</h2>
@@ -282,7 +284,8 @@
     </div>
 
     <div id="loader">
-    <img src="app logo_circle_crop.png" alt="Loading..." class="loader-logo">
+    <img src="{{ url_for('static', filename='images/app_logo_circle_crop.png') }}" alt="Loading..." class="loader-logo">
+
 </div>
 
     <!-- Star Background Animation -->
